@@ -9,5 +9,5 @@ spring:
       username: root
       password: 123456
 mybatis-plus:
-  mapper-locations: classpath:com/maggie/mapper/*Mapper.xml
-  type-aliases-package: com.maggie.domain,com.maggie.query
+  mapper-locations: classpath:com/maggie/hrm/mapper/*Mapper.xml
+  type-aliases-package: com.maggie.hrm.domain,com.maggie.hrm.query
