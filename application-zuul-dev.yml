@@ -14,8 +14,8 @@ zuul:
     es.serviceId: hrm-es # 服务名
     es.path: /es/** # 把所有请求都转发给hrm-es
     redis.serviceId: hrm-redis # 服务名
-    # redis.path: /redis/** # 把所有请求都转发给hrm-redis
-    # page.serviceId: hrm-page # 服务名
+    redis.path: /redis/** # 把所有请求都转发给hrm-redis
+    page.serviceId: hrm-page # 服务名
     page.path: /page/** # 把所有请求都转发给hrm-page
   ignored-services: "*" #所有服务都不允许以服务名来访问
   prefix: "/services" #加一个统一前缀
