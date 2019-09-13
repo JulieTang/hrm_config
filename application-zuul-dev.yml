@@ -21,8 +21,8 @@ zuul:
   prefix: "/services" #加一个统一前缀
   retryable: true #是否重试
 ribbon:
-  ConnectTimeout: 250 # 连接超时时间(ms)
-  ReadTimeout: 2000 # 通信超时时间(ms)
+  ConnectTimeout: 10000 # 连接超时时间(ms)
+  ReadTimeout: 10000 # 通信超时时间(ms)
   OkToRetryOnAllOperations: true # 是否对所有操作重试
   MaxAutoRetriesNextServer: 2 # 同一服务不同实例的重试次数
   MaxAutoRetries: 1 # 同一实例的重试次数
@@ -32,4 +32,4 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMillisecond: 3000 # 熔断超时时长：3000ms
+            timeoutInMillisecond: 30000 # 熔断超时时长：3000ms
